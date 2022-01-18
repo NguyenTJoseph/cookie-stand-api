@@ -3,9 +3,9 @@ import requests
 
 # NOTE: Adjust these settings as needed
 API_HOST = "http://localhost:8000"
-RESOURCE_URI = "things"
-USERNAME = "admin"
-PASSWORD = "admin"
+RESOURCE_URI = "cookiestands"
+USERNAME = "Joseph"
+PASSWORD = "pass"
 
 
 class ApiTester:
