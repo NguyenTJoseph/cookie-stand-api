@@ -43,6 +43,8 @@ DEBUG = env.bool("DEBUG")
 
 ALLOWED_HOSTS = tuple(env.list("ALLOWED_HOSTS"))
 
+CSRF_TRUSTED_ORIGINS = ["https://cookiesstand-api.herokuapp.com"]
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 

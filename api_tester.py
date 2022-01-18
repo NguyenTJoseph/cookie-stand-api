@@ -2,7 +2,7 @@ import fire
 import requests
 
 # NOTE: Adjust these settings as needed
-API_HOST = "http://localhost:8000"
+API_HOST = "http://127.0.0.1:8000"
 RESOURCE_URI = "cookiestands"
 USERNAME = "Joseph"
 PASSWORD = "pass"
