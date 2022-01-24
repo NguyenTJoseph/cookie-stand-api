@@ -2,7 +2,7 @@ import fire
 import requests
 
 # NOTE: Adjust these settings as needed
-API_HOST = "http://localhost:8000"
+API_HOST = "https://cookiesstand-api.herokuapp.com"
 RESOURCE_URI = "cookiestands"
 USERNAME = "Joseph"
 PASSWORD = "pass"
@@ -95,7 +95,7 @@ class ApiTester:
         }
 
         data = {
-            "name": name,
+            "location": name,
             "description": description,
             "owner": owner,
         }
@@ -125,7 +125,7 @@ class ApiTester:
         original = self.get_one(id)
 
         data = {
-            "name": name or original["name"],
+            "location": name or original["name"],
             "description": description or original["description"],
             "owner": owner or original["owner"],
         }
